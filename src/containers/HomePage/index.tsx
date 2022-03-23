@@ -1,11 +1,14 @@
 import React from "react";
- class HomePage extends React.Component{
-     render(){
-         return(
-             <div>
-                 <h1>Home Page</h1>
-             </div>
-         )
-     }
- }
- export default HomePage;
+import { ShopQuality } from "../../components/ShopQuality";
+import "./style.css";
+class HomePage extends React.Component {
+  render() {
+    return (
+      <div className="homepage-container">
+        <div className="cover-image" />
+        <ShopQuality />
+      </div>
+    );
+  }
+}
+export default HomePage;

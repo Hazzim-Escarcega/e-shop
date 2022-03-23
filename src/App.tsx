@@ -11,14 +11,16 @@ import { HeaderNavigation } from "./components/HeaderNavigation";
 function App() {
   return (
     <BrowserRouter>
-      <HeaderNavigation />
-      <Switch>
-        <Route exact component={CheckoutPage} path={ROUTE.CHECKOUT} />
-        <Route exact component={AllProductsPage} path={ROUTE.ALL_PRODUCTS} />
-        <Route exact component={HomePage} path={ROUTE.HOME} />
+      <div className="app-container">
+        <HeaderNavigation />
+        <Switch>
+          <Route exact component={CheckoutPage} path={ROUTE.CHECKOUT} />
+          <Route exact component={AllProductsPage} path={ROUTE.ALL_PRODUCTS} />
+          <Route exact component={HomePage} path={ROUTE.HOME} />
 
-        <Redirect to={ROUTE.HOME} />
-      </Switch>
+          <Redirect to={ROUTE.HOME} />
+        </Switch>
+      </div>
     </BrowserRouter>
   );
 }

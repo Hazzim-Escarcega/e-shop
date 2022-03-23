@@ -7,7 +7,7 @@ export const HeaderNavigation: React.FC = () => {
     <div className="header-nav-container">
       <div className="nav-items-left">
         <Link className="nav-item shopname" to={ROUTE.HOME}>
-          ShopSpree
+          S h o p s p r e e
         </Link>
         <Link className="nav-item" to={ROUTE.ALL_PRODUCTS}>
           All Products
