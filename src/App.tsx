@@ -6,10 +6,12 @@ import CheckoutPage from "./containers/CheckoutPage";
 import AllProductsPage from "./containers/AllProductsPage";
 import HomePage from "./containers/HomePage";
 import { ROUTE } from "./constants/route";
+import { HeaderNavigation } from "./components/HeaderNavigation";
 
 function App() {
   return (
     <BrowserRouter>
+      <HeaderNavigation />
       <Switch>
         <Route exact component={CheckoutPage} path={ROUTE.CHECKOUT} />
         <Route exact component={AllProductsPage} path={ROUTE.ALL_PRODUCTS} />
